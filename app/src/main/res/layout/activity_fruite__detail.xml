@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fruite__detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context="com.goals.mobile.fruity_fruity.view.activity.Fruite_Detail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/imageViewback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_white" />
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imageViewback"
+                android:text="Fruite Detail"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_basket"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+
+
+                >
+
+                <ImageView
+
+                    android:id="@+id/imageView_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/logout" />
+
+                <ImageView
+                    android:id="@+id/imageView_basket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/imageView_logout"
+                    android:src="@drawable/basket_icon"
+
+                    />
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                    android:id="@+id/textView_cardcont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/big_img" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_product_image"
+            android:background="@drawable/bar"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                android:id="@+id/textView_fruite_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/divider"
+                android:layout_weight="1.8"
+                android:gravity="center_vertical"
+
+                android:paddingLeft="20dp"
+                android:text="Apple"
+                android:textColor="@color/colorText"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/textView_prize"
+                android:background="@drawable/divider_1" />
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                android:id="@+id/textView_prize"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center_vertical"
+
+                android:text="$99"
+                android:textColor="@color/colorText"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_product_description"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bar"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/layout_quenty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.86"
+                android:orientation="horizontal">
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                    android:id="@+id/textViewBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/quanitity"
+                    android:textColor="@color/colorText"
+                    android:textSize="16dp" />
+
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                    android:id="@+id/textView_cout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorText"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/textView_prize"
+                android:background="@drawable/divider_1" />
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.EditTextMedium
+                android:id="@+id/editText_qnty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/textView_prize"
+                android:background="@drawable/divider_1" />
+
+            <RelativeLayout
+                android:id="@+id/layout_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8">
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+
+                    android:id="@+id/textView_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/imageView_drop"
+                    android:gravity="center_vertical"
+                    android:text="Item"
+                    android:textColor="@color/colorText"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/menu" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:layout_below="@+id/layout_quality"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff">
+
+
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.EditTextMedium
+                android:id="@+id/textViewdescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/textView_totalprize"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="2dp"
+                android:editable="false"
+                android:inputType="none"
+                android:text="Lorem ipsum dolor sit amet, suas ullum vis et, sint eligendi vel ex. Et soleat virtute sed, paulo eloquentiam delicatissimi id per. Te dolorum sapientem qui, eam nominavi legendos vituperata no. Te brute prompta lucilius est, sit ad causae aeterno insolens."
+                android:textSize="16dp" />
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+
+                android:id="@+id/textView_totalprize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:text="Total:HK$99"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_item"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textViewdescription"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/textViewdescription"
+                android:background="@drawable/box_item">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bar"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.ButtonBold
+                android:id="@+id/button_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="ADD to Cart"
+                android:textColor="@color/colorText" />
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.ButtonBold
+                android:id="@+id/button_buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="Buy"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

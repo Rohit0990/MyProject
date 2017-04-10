@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+android:layout_marginTop="15dp"
+            android:id="@+id/layout_login"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_logo"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line_edittext"
+                android:paddingBottom="5dp"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/user_nameicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/user" />
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.EditTextMedium
+                    android:id="@+id/editText_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/user_nameicon"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/username"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorText"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line_edittext"
+                android:paddingBottom="5dp"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/password" />
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.EditTextMedium
+                    android:id="@+id/editText_password"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView_password"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/password"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorText"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_bottom"
+            >
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.ButtonBold
+                android:layout_marginRight="50dp"
+                android:id="@+id/buttonlogin"
+                android:layout_marginLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:text="LOGIN"
+
+                />
+            <ImageView
+                android:id="@+id/image_bar"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/buttonlogin"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/small_bar"
+                />
+
+
+            <com.facebook.login.widget.LoginButton
+
+                android:layout_below="@+id/image_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+         android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button_fb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:id="@+id/layout_bottom"
+            android:background="@drawable/bootom_bar_1"
+            android:layout_height="wrap_content">
+
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewMedium
+              android:id="@+id/textView_forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorText"
+                android:text="Forgot your password?"
+                android:background="@drawable/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                />
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewMedium
+                android:id="@+id/textView_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorText"
+                android:text="New here?Sign up"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/line"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

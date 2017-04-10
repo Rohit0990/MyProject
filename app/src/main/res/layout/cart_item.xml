@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+<ImageView
+
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/iv_fruitimage"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/img_1"
+    />
+    <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mango"
+        android:textSize="16dp"
+        android:id="@+id/textView_fruitname"
+        android:textColor="@color/colorText"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/iv_fruitimage"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv_fruitimage"
+        android:layout_below="@+id/textView_fruitname"
+        android:orientation="vertical">
+        <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="14dp"
+            android:id="@+id/textView_total_prize"
+            android:text="HK$9"/>
+        <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="14dp"
+            android:id="@+id/textView_qty"
+            android:text="Qty: 3 pcs"/>
+    </LinearLayout>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imageView_delete"
+          android:layout_alignParentRight="true"
+
+        />
+    </RelativeLayout>
+</RelativeLayout>

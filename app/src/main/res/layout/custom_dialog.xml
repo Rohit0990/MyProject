@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="50dp">
+
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alert!"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/line_edittext"
+            android:paddingBottom="15dp"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/phone_icon" />
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.EditTextMedium
+                android:id="@+id/editText_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView_phonenumber"
+                android:background="@android:color/transparent"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:layout_centerVertical="true"
+                android:maxLength="11"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="16dp" />
+
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+
+                android:id="@+id/textView_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="Verify"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView_verfy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/verified_tick" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+
+            android:layout_height="wrap_content">
+
+            <com.goals.mobile.fruity_fruity.controller.viewcontols.ButtonBold
+                android:id="@+id/button_done"
+                android:layout_width="match_parent"
+                android:text="Done"
+            android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@color/colorAccent"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context="com.goals.mobile.fruity_fruity.view.activity.Home">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu2" />
+
+            <RelativeLayout
+                android:id="@+id/layout_basket"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+
+
+                >
+
+
+                <ImageView
+
+                    android:id="@+id/imageView_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/logout" />
+
+                <ImageView
+                    android:id="@+id/imageView_basket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/imageView_logout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/basket_icon" />
+
+                <com.goals.mobile.fruity_fruity.controller.viewcontols.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+android:id="@+id/textView_cardcont"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:text="Home"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/menu"
+                android:layout_toEndOf="@+id/menu"
+                android:layout_marginStart="31dp"
+                android:id="@+id/textView" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_search"
+        android:layout_margin="10dp"
+        android:background="@drawable/search">
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/search_icon" />
+
+        <com.goals.mobile.fruity_fruity.controller.viewcontols.EditTextMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageViewSearch"
+            android:hint="Search"
+            android:inputType="textNoSuggestions"
+            android:paddingRight="20dp"
+            android:id="@+id/editTextSearch"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

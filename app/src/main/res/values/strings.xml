@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fruity_Fruity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="all_fileds">Please fill all fields</string>
+    <string name="user_name">Please enter user name</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="email_address">Please enter email address</string>
+    <string name="valid_email">Please enter valid email address</string>
+    <string name="phone_number_validation">Please enter phone number</string>
+    <string name="valid_phone_number">Please enter valid phone number</string>
+    <string name="home">Home</string>
+    <string name="quanitity">Quanitity</string>
+    <string name="facebook_app_id">1290790000971043</string>
+    <string name="fb_login_protocol_scheme">fb1290790000971043</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="veriy">Please verify phone number</string>
+</resources>
